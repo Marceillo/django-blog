@@ -7,7 +7,8 @@ from .models import Post
 class PostList(generic.ListView):
     # to filter the posts with the status of Publisher
     queryset = Post.objects.filter(status=1)
-    template_name = "post_list.html"
+    template_name = "blog/index.html"
+    paginate_by = 6
     #queryset = Post.objects.all().order_by("created_on")
     #queryset = Post.objects.all().order_by("-created_on") reverses the order
     #queryset = Post.objects.filter(author=2)
