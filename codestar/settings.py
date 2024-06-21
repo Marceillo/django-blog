@@ -47,12 +47,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'blog',
     'django_summernote',
+    'blog',
     'about',
     
 ]
-
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
